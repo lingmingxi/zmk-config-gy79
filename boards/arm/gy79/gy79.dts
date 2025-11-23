@@ -98,7 +98,7 @@
 	physical_layout_0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default";
-        
+        transform = <&layout_grid_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 125 100    0   25       0     0     0>
@@ -268,7 +268,5 @@ zephyr_udc0: &usbd {
 
 };
 
-&layout_ortho_4x12_all1u {
-    transform = <&layout_grid_transform>;
-};
+
 
