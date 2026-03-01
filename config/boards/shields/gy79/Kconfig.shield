@@ -1,0 +1,10 @@
+# GY79 board configuration
+
+# Copyright (c) 2022 Polarity Works
+# SPDX-License-Identifier: MIT
+
+config SHIELD_BOARD_GY79
+	select SOC_NRF52840_QIAA
+	imply RETAINED_MEM
+	imply RETENTION
+	imply RETENTION_BOOT_MODE

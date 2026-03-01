@@ -1,9 +1,9 @@
 # Copyright (c) 2021 Polarity Works
 # SPDX-License-Identifier: MIT
 
-if BOARD_GY79
+if SHIELD_GY79
 
-config BOARD
+config ZMK_KEYBOARD_NAME
 	default "gy79"
 
 if USB
@@ -29,6 +29,6 @@ config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
 config ZMK_KEYBOARD_NAME
-	default "GY791"
+	default "GY79"
 
 endif # BOARD_GY79
